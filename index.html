@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StyleNest - Premium F-Commerce Fashion Store. Wear Confidence. Own Every Moment.">
+  <title>StyleNest | Premium F-Commerce Fashion</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- External CSS Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="brand-logo">Style<span>Nest</span></a>
+      
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#categories" class="nav-link">Shop</a></li>
+          <li><a href="#collections" class="nav-link">Collections</a></li>
+          <li><a href="#products" class="nav-link">New Arrivals</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-icons">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle Dark Mode">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        
+        <button class="icon-btn" aria-label="Wishlist">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span class="badge" id="wishlist-count">0</span>
+        </button>
+
+        <button class="icon-btn" aria-label="Shopping Bag">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="badge" id="cart-count">0</span>
+        </button>
+
+        <a href="#products" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Order Now</a>
+
+        <button class="icon-btn mobile-menu-btn" id="menu-toggle" aria-label="Toggle Navigation">
+          <svg class="icon" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <span class="hero-tag">F-Commerce Exclusive</span>
+        <h1 class="hero-title">Wear Confidence. <span>Own Every</span> Moment.</h1>
+        <p class="hero-desc">Discover luxury streetwear and classic fits designed for modern fashion enthusiasts. Direct-to-door delivery with seamless social ordering.</p>
+        <div class="hero-cta">
+          <a href="#products" class="btn btn-accent">Shop Now</a>
+          <a href="#categories" class="btn btn-outline">View Collection</a>
+        </div>
+      </div>
+      
+      <div class="hero-image-wrapper reveal">
+        <div class="hero-image-card">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" alt="StyleNest Fashion Model">
+        </div>
+        <div class="floating-badge glass-panel">
+          <div class="badge-icon">%</div>
+          <div>
+            <strong style="display:block; font-size:0.9rem;">Special Offer</strong>
+            <span style="font-size:0.75rem; color:var(--muted);">Flat 20% OFF via Messenger</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding" id="categories">
+    <div class="container">
+      <h2 class="section-title reveal">Curated Collections</h2>
+      <p class="section-subtitle reveal">Explore our core style segments</p>
+
+      <div class="categories-grid">
+        <div class="category-card reveal">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Women's Fashion">
+          <div class="category-overlay">
+            <h3 class="category-title">Women's Fashion</h3>
+            <span class="category-subtitle">120+ Products</span>
+          </div>
+        </div>
+
+        <div class="category-card reveal">
+          <img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=600&q=80" alt="Men's Fashion">
+          <div class="category-overlay">
+            <h3 class="category-title">Men's Apparel</h3>
+            <span class="category-subtitle">85+ Products</span>
+          </div>
+        </div>
+
+        <div class="category-card reveal">
+          <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?auto=format&fit=crop&w=600&q=80" alt="Accessories">
+          <div class="category-overlay">
+            <h3 class="category-title">Accessories</h3>
+            <span class="category-subtitle">45+ Products</span>
+          </div>
+        </div>
+
+        <div class="category-card reveal">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80" alt="Seasonal">
+          <div class="category-overlay">
+            <h3 class="category-title">Seasonal Edit</h3>
+            <span class="category-subtitle">Limited Stock</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding" id="products">
+    <div class="container">
+      <h2 class="section-title reveal">Best Sellers</h2>
+      <p class="section-subtitle reveal">Handpicked trending outfits</p>
+
+      <div class="filter-controls reveal">
+        <button class="filter-btn active" data-filter="all">All Items</button>
+        <button class="filter-btn" data-filter="women">Women</button>
+        <button class="filter-btn" data-filter="men">Men</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+      </div>
+
+      <div class="products-grid" id="product-grid">
+      </div>
+    </div>
+  </section>
+
+  <section class="container reveal" id="collections">
+    <div class="promo-banner">
+      <div class="promo-grid">
+        <div class="promo-content">
+          <span style="color:var(--gold); text-transform:uppercase; font-size:0.85rem; letter-spacing:2px; font-weight:600;">Flash Deal</span>
+          <h3>End of Season Sale</h3>
+          <p>Get up to 50% discount on all premium luxury jackets and accessories. Offer valid until stock lasts!</p>
+
+          <div class="countdown-timer">
+            <div class="timer-block">
+              <span class="number" id="timer-days">02</span>
+              <span class="label">Days</span>
+            </div>
+            <div class="timer-block">
+              <span class="number" id="timer-hours">14</span>
+              <span class="label">Hours</span>
+            </div>
+            <div class="timer-block">
+              <span class="number" id="timer-mins">35</span>
+              <span class="label">Mins</span>
+            </div>
+            <div class="timer-block">
+              <span class="number" id="timer-secs">50</span>
+              <span class="label">Secs</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-accent">Claim Discount</a>
+        </div>
+
+        <div>
+          <div class="perks-grid">
+            <div class="perk-item">
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 2 12"></polyline></svg>
+              <span>Cash on Delivery</span>
+            </div>
+            <div class="perk-item">
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 2 12"></polyline></svg>
+              <span>Free Island Delivery</span>
+            </div>
+            <div class="perk-item">
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 2 12"></polyline></svg>
+              <span>7-Day Easy Return</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">Why StyleNest</h2>
+      <p class="section-subtitle reveal">The premium standard of fashion commerce</p>
+
+      <div class="features-grid">
+        <div class="feature-card reveal glass-panel">
+          <div class="feature-icon-box">
+            <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <h3 class="feature-title">Premium Quality</h3>
+          <p class="feature-desc">Sourced from top-tier textiles designed for endurance and maximum comfort.</p>
+        </div>
+
+        <div class="feature-card reveal glass-panel">
+          <div class="feature-icon-box">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          </div>
+          <h3 class="feature-title">Fast Express Delivery</h3>
+          <p class="feature-desc">Receive your items within 24 to 48 hours anywhere in the country.</p>
+        </div>
+
+        <div class="feature-card reveal glass-panel">
+          <div class="feature-icon-box">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          </div>
+          <h3 class="feature-title">Secure COD Payment</h3>
+          <p class="feature-desc">Pay directly when your parcel arrives safely at your doorstep.</p>
+        </div>
+
+        <div class="feature-card reveal glass-panel">
+          <div class="feature-icon-box">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3 class="feature-title">Loved By 50k+</h3>
+          <p class="feature-desc">Join our thriving social community across Facebook and Instagram.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <h2 class="section-title reveal">Customer Stories</h2>
+      <p class="section-subtitle reveal">Feedback from verified buyers</p>
+
+      <div class="reviews-container reveal">
+        <div class="reviews-track" id="reviews-track">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"The quality of the blazer completely blew me away. I ordered directly through Facebook Messenger and received it in 2 days. Perfect fit!"</p>
+            <div class="reviewer-info">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" class="reviewer-avatar" alt="Reviewer">
+              <div>
+                <div class="reviewer-name">Sophia Ahmed</div>
+                <div class="reviewer-role">Verified Buyer</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"StyleNest is my go-to brand now. Material is premium, exactly like high-end retail brands, but at a fraction of the cost."</p>
+            <div class="reviewer-info">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" class="reviewer-avatar" alt="Reviewer">
+              <div>
+                <div class="reviewer-name">Tanvir Hossain</div>
+                <div class="reviewer-role">Verified Buyer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn" id="prev-review" aria-label="Previous Review">←</button>
+          <button class="slider-btn" id="next-review" aria-label="Next Review">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <h2 class="section-title reveal">Follow On Instagram</h2>
+      <p class="section-subtitle reveal">Tag @StyleNest to be featured</p>
+    </div>
+
+    <div class="insta-grid reveal">
+      <div class="insta-item">
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=400&q=80" alt="Insta Post">
+        <div class="insta-overlay"><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></div>
+      </div>
+      <div class="insta-item">
+        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=400&q=80" alt="Insta Post">
+        <div class="insta-overlay"><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></div>
+      </div>
+      <div class="insta-item">
+        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=400&q=80" alt="Insta Post">
+        <div class="insta-overlay"><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></div>
+      </div>
+      <div class="insta-item">
+        <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=400&q=80" alt="Insta Post">
+        <div class="insta-overlay"><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></div>
+      </div>
+      <div class="insta-item">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=400&q=80" alt="Insta Post">
+        <div class="insta-overlay"><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></div>
+      </div>
+      <div class="insta-item">
+        <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=400&q=80" alt="Insta Post">
+        <div class="insta-overlay"><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding" style="background: var(--surface);">
+    <div class="container">
+      <h2 class="section-title reveal">How To Order</h2>
+      <p class="section-subtitle reveal">Seamless 3-step ordering process</p>
+
+      <div class="timeline reveal">
+        <div class="timeline-step">
+          <div class="step-number">1</div>
+          <h4>Select Your Style</h4>
+          <p>Browse our catalog and choose your preferred clothes, size, and color.</p>
+        </div>
+        <div class="timeline-step">
+          <div class="step-number">2</div>
+          <h4>Send Us A Message</h4>
+          <p>Click order to inbox us directly on Facebook, Messenger, or WhatsApp.</p>
+        </div>
+        <div class="timeline-step">
+          <div class="step-number">3</div>
+          <h4>Receive At Doorstep</h4>
+          <p>Get fast delivery and pay with cash upon receiving your parcel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="newsletter-section reveal">
+        <h2 class="section-title">Join The Club</h2>
+        <p style="color:var(--muted); max-width:500px; margin: 0 auto;">Subscribe to get private drops, VIP discount codes, and seasonal trend updates.</p>
+
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
+          <button type="submit" class="btn btn-accent">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Direct Ordering</h2>
+      <p class="section-subtitle reveal">Connect via your favorite platform</p>
+
+      <div class="contact-grid">
+        <div class="reveal">
+          <h3 style="font-family: var(--font-heading); font-size:1.8rem; margin-bottom:1rem;">Instant Social Checkout</h3>
+          <p style="color:var(--muted); margin-bottom:1.5rem;">Click any channel below to connect directly with our customer sales team for instant ordering and customization requests.</p>
+
+          <div class="social-cta-btns">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn btn-fb">Facebook Page</a>
+            <a href="https://m.me" target="_blank" rel="noopener" class="social-btn btn-msg">Messenger</a>
+            <a href="https://wa.me" target="_blank" rel="noopener" class="social-btn btn-wa">WhatsApp</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn btn-ig">Instagram DM</a>
+          </div>
+
+          <div style="margin-top:2rem;">
+            <strong>Hours:</strong> 10:00 AM - 10:00 PM (Everyday)
+          </div>
+        </div>
+
+        <div class="map-placeholder reveal">
+          Interactive Store Location / Map Placeholder
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand-logo" style="color:white;">Style<span>Nest</span></a>
+          <p>Premium F-Commerce fashion destination providing refined streetwear and couture directly through social channels.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Shop</h4>
+          <ul class="footer-links">
+            <li><a href="#products">Women's Collection</a></li>
+            <li><a href="#products">Men's Collection</a></li>
+            <li><a href="#products">New Arrivals</a></li>
+            <li><a href="#products">Accessories</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Help</h4>
+          <ul class="footer-links">
+            <li><a href="#contact">Order Tracking</a></li>
+            <li><a href="#about">Size Guide</a></li>
+            <li><a href="#about">Returns & Policy</a></li>
+            <li><a href="#contact">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 StyleNest. All Rights Reserved. Designed for F-Commerce.</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="quick-view-modal">
+    <div class="modal-content">
+      <span class="modal-close" id="modal-close">&times;</span>
+      <div style="height:300px; background:#f0f0f0; border-radius:var(--radius-md); overflow:hidden;">
+        <img id="modal-img" src="" alt="Product" style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div>
+        <h3 id="modal-title" style="font-family: var(--font-heading); font-size:1.8rem; margin-bottom:0.5rem;">Product Name</h3>
+        <div id="modal-price" style="font-size:1.25rem; font-weight:700; color:var(--accent); margin-bottom:1rem;">$0.00</div>
+        <p id="modal-desc" style="color:var(--muted); font-size:0.9rem; margin-bottom:1.5rem;">High quality premium attire designed with perfection for durability and style.</p>
+        
+        <div style="display:flex; gap:0.5rem; margin-bottom:1.5rem;">
+          <a id="modal-order-btn" href="https://m.me" target="_blank" class="btn btn-accent" style="flex:1;">Order On Messenger</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <div class="toast" id="toast">
+    <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 2 12"></polyline></svg>
+    <span id="toast-msg">Item added to bag!</span>
+  </div>
+
+  <!-- External JS Link -->
+  <script src="script.js"></script>
+</body>
+</html>
