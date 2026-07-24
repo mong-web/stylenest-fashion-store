@@ -9,8 +9,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- External CSS Link -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,9 +29,7 @@
       </nav>
 
       <div class="nav-icons">
-        <button class="icon-btn" id="theme-toggle" aria-label="Toggle Dark Mode">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-        </button>
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle Theme"></button>
         
         <button class="icon-btn" aria-label="Wishlist">
           <svg class="icon" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
@@ -136,8 +132,7 @@
         <button class="filter-btn" data-filter="accessories">Accessories</button>
       </div>
 
-      <div class="products-grid" id="product-grid">
-      </div>
+      <div class="products-grid" id="product-grid"></div>
     </div>
   </section>
 
@@ -421,7 +416,7 @@
   <div class="modal" id="quick-view-modal">
     <div class="modal-content">
       <span class="modal-close" id="modal-close">&times;</span>
-      <div style="height:300px; background:#f0f0f0; border-radius:var(--radius-md); overflow:hidden;">
+      <div style="height:300px; background:var(--border); border-radius:var(--radius-md); overflow:hidden;">
         <img id="modal-img" src="" alt="Product" style="width:100%; height:100%; object-fit:cover;">
       </div>
       <div>
@@ -445,7 +440,6 @@
     <span id="toast-msg">Item added to bag!</span>
   </div>
 
-  <!-- External JS Link -->
   <script src="script.js"></script>
 </body>
 </html>
